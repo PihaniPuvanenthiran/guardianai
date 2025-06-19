@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guardian - AI Chatbot for Ethical Hacking Awareness</title>
+    <title>Guardianai</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -451,7 +451,10 @@
             <div class="description">
                 Pioneering cybersecurity education through AI-powered conversational learning. Guardian provides comprehensive guidance on ethical hacking practices, cyber threat awareness, and digital safety protocols through intelligent, user-friendly interactions.
             </div>
-            <button class=submit-btn> Chat with Guardian</button>
+            
+
+            <button id="chat-launch-btn" class="submit-btn" onclick="window.open('http://127.0.0.1:5000/', '_blank')">Chat with Guardian</button>
+
         </div>
     </section>
 
@@ -787,6 +790,8 @@
         document.querySelectorAll('.section').forEach(section => {
             observer.observe(section);
         });
+
+        
     </script>
 </body>
 </html>
